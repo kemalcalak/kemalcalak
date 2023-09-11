@@ -20,7 +20,7 @@
     </p>
   </li>
   <li>
-    <p dir="auto">⚡ Fun fact <strong>I love coding, especially object
+    <p dir="auto">⚡ <strong>I love coding, especially object
         detection with artificial intelligence</strong></p>
   </li>
 </ul>
