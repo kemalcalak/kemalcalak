@@ -1,10 +1,29 @@
 <h1 align="center">Hi 👋, I'm Ali Kemal</h1>
 <h3 align="center">A Software Engineering Student</h3>
 
-- 🌱 I’m currently learning **myself on Data Science & AI
-Technologies(especially on Python)** - 📫 How to reach me
-**kemalcalak@gmail.com** - ⚡ Fun fact **I love coding, especially object
-detection with artificial intelligence**
+
+<ul dir="auto">
+  <li>
+    <p dir="auto">
+      🌱 I’m currently developing myself on
+      <strong>Data Science & AITechnologies(especially on Python)</strong>
+    </p>
+  </li>
+  <li>
+    <p dir="auto">
+      📫 How to reach me
+      <strong
+        ><a href="mailto:kemalcalak@gmail.com"
+          >kemalcalak@gmail.com</a
+        ></strong
+      >
+    </p>
+  </li>
+  <li>
+    <p dir="auto">⚡ Fun fact <strong>I love coding, especially object
+        detection with artificial intelligence</strong></p>
+  </li>
+</ul>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
@@ -223,4 +242,3 @@ detection with artificial intelligence**
     alt="kemalcalak"
   />
 </p>
-
