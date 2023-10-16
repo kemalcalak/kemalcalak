@@ -6,7 +6,7 @@
   <li>
     <p dir="auto">
       🌱 I’m currently developing myself on
-      <strong>Data Science & AITechnologies(especially on Python)</strong>
+      <strong>Data Science & AI Technologies(especially on Python)</strong>
     </p>
   </li>
   <li>
