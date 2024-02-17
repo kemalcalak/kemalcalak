@@ -98,7 +98,7 @@
 <p align="left">
   <a href="https://numpy.org/" rel="nofollow">
     <img
-      src="https://camo.githubusercontent.com/c844e844fe08aedc80a137a59df24f6d9eae36946e4d2788e9923b296718c96b/68747470733a2f2f6e756d70792e6f72672f696d616765732f6c6f676f2e737667"
+      src="https://th.bing.com/th?id=ODLS.26a307b6-2035-4be5-9fd4-7bdae24400a8&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2"
       alt="numpy"
       width="40"
       height="40"
@@ -117,7 +117,7 @@
   </a>
   <a href="https://matplotlib.org/" rel="nofollow">
     <img
-      src="https://camo.githubusercontent.com/4571184cfb69acb12ec5999006f3497ce904a6fcdf973a8dda56b3ed9d82df59/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f302f30312f437265617465645f776974685f4d6174706c6f746c69622d6c6f676f2e7376672f3230343870782d437265617465645f776974685f4d6174706c6f746c69622d6c6f676f2e7376672e706e67"
+      src="https://th.bing.com/th?id=ODLS.52bd85f3-a366-4464-9a67-664b779630fb&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2"
       alt="matplotlib"
       width="40"
       height="40"
@@ -125,15 +125,8 @@
       style="max-width: 100%"
     />
   </a>
-  <a href="https://seaborn.pydata.org/" rel="nofollow">
-    <img
-      src="https://camo.githubusercontent.com/53ae1cb6abbfacfb463f0a0d2fbdb58acad261200cb61f3d32abd7ac0edacded/68747470733a2f2f736561626f726e2e7079646174612e6f72672f5f696d616765732f6c6f676f2d6d61726b2d6c6967687462672e737667"
-      alt="seaborn"
-      width="40"
-      height="40"
-      data-canonical-src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg"
-      style="max-width: 100%"
-    />
+  <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> 
+    <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> 
   </a>
   <a href="https://opencv.org/" target="_blank" rel="noreferrer">
     <img
