@@ -12,7 +12,7 @@
     <p dir="auto">
       📫 How to reach me
       <strong
-        ><a href="mailto:kemalcalak@gmail.com">kemalcalak@gmail.com</a></strong
+        ><a href="https://kemalcalak.com/">kemalcalak.com</a></strong
       >
     </p>
   </li>
