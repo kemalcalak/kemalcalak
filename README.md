@@ -110,9 +110,6 @@
       style="max-width: 100%"
     />
   </a>
-  <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> 
-    <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> 
-  </a>
   <a href="https://opencv.org/" target="_blank" rel="noreferrer">
     <img
       src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg"
@@ -125,14 +122,6 @@
     <img
       src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg"
       alt="tensorflow"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://keras.io" target="_blank" rel="noreferrer">
-    <img
-      src="https://th.bing.com/th?id=OSK.a1f9dd5c5a0af5ca13467f6c5eab41d0&w=148&h=148&c=7&o=6&dpr=1.3&pid=SANGAM"
-      alt="keras"
       width="40"
       height="40"
     />
