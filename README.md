@@ -158,9 +158,6 @@
     />
   </a>
 </p>
-
-![snake gif](https://github.com/kemalcalak/kemalcalak/blob/output/github-contribution-grid-snake.gif)
-
 <p>
   <img
     align="left"
@@ -168,7 +165,6 @@
     alt="kemalcalak"
   />
 </p>
-
 <p>
   &nbsp;<img
     align="center"
@@ -176,3 +172,5 @@
     alt="kemalcalak"
   />
 </p>
+
+![snake gif](https://github.com/kemalcalak/kemalcalak/blob/output/github-contribution-grid-snake.svg)
