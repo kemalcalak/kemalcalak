@@ -159,8 +159,6 @@
   </a>
 </p>
 
-<img src="https://raw.githubusercontent.com/kemalcalak/kemalcalak/output/snake.svg" alt="Snake animation" />
-
 <p>
   <img
     align="left"
