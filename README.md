@@ -159,6 +159,8 @@
   </a>
 </p>
 
+![snake gif](https://github.com/kemalcalak/kemalcalak/blob/output/github-contribution-grid-snake.gif)
+
 <p>
   <img
     align="left"
