@@ -158,18 +158,19 @@
     />
   </a>
 </p>
-<p>
-  <img
-    align="left"
-    src="https://github-readme-stats.vercel.app/api/top-langs?username=kemalcalak&show_icons=true&locale=en&layout=compact"
-    alt="kemalcalak"
+<p align="center">
+  <img 
+    src="https://github-readme-stats.vercel.app/api/top-langs?username=kemalcalak&show_icons=true&locale=en&layout=compact&theme=dark" 
+    width="400" 
+    height="200"
+    alt="Top Languages"
   />
-</p>
-<p>
-  &nbsp;<img
-    align="center"
-    src="https://github-readme-stats.vercel.app/api?username=kemalcalak&show_icons=true&locale=en"
-    alt="kemalcalak"
+  &nbsp;
+  <img 
+    src="https://github-readme-stats.vercel.app/api?username=kemalcalak&show_icons=true&locale=en&theme=dark" 
+    width="400" 
+    height="200"
+    alt="GitHub Stats"
   />
 </p>
 
