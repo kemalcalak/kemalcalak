@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 900 380" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, 'Liberation Mono', monospace">
+  <defs>
+    <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+    <radialGradient id="glowCyan" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowViolet" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#13203a" stroke-width="1"/>
+    </pattern>
+    <filter id="winShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+    <filter id="neon" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <linearGradient id="shineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#cdeffd" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="termClip">
+      <rect x="90" y="44" width="720" height="308" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    .type tspan{opacity:0;animation:on 0.01s linear forwards}
+    @keyframes on{from{opacity:1}to{opacity:1}}
+    .t1 tspan:nth-child(3){animation-delay:0.50s}
+    .t1 tspan:nth-child(4){animation-delay:0.58s}
+    .t1 tspan:nth-child(5){animation-delay:0.66s}
+    .t1 tspan:nth-child(6){animation-delay:0.74s}
+    .t1 tspan:nth-child(7){animation-delay:0.82s}
+    .t1 tspan:nth-child(8){animation-delay:0.90s}
+    .t2 tspan:nth-child(3){animation-delay:2.20s}
+    .t2 tspan:nth-child(4){animation-delay:2.25s}
+    .t2 tspan:nth-child(5){animation-delay:2.30s}
+    .t2 tspan:nth-child(6){animation-delay:2.35s}
+    .t2 tspan:nth-child(7){animation-delay:2.40s}
+    .t2 tspan:nth-child(8){animation-delay:2.45s}
+    .t2 tspan:nth-child(9){animation-delay:2.50s}
+    .t2 tspan:nth-child(10){animation-delay:2.55s}
+    .t2 tspan:nth-child(11){animation-delay:2.60s}
+    .t2 tspan:nth-child(12){animation-delay:2.65s}
+    .t2 tspan:nth-child(13){animation-delay:2.70s}
+    .t2 tspan:nth-child(14){animation-delay:2.75s}
+    .t2 tspan:nth-child(15){animation-delay:2.80s}
+    .t2 tspan:nth-child(16){animation-delay:2.85s}
+    .t2 tspan:nth-child(17){animation-delay:2.90s}
+    .t2 tspan:nth-child(18){animation-delay:2.95s}
+    .t2 tspan:nth-child(19){animation-delay:3.00s}
+    .t2 tspan:nth-child(20){animation-delay:3.05s}
+    .rise{opacity:0;animation:up 0.7s cubic-bezier(0.2,0.7,0.3,1) forwards}
+    .d13{animation-delay:1.3s}
+    .d17{animation-delay:1.7s}
+    .d33{animation-delay:3.3s}
+    @keyframes up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+    .r1,.r2,.r3{opacity:0;animation:cyc 9s linear infinite}
+    .r1{animation-delay:3.6s}
+    .r2{animation-delay:6.6s}
+    .r3{animation-delay:9.6s}
+    @keyframes cyc{0%{opacity:0}2%{opacity:1}30%{opacity:1}33%{opacity:0}100%{opacity:0}}
+    .cursor{opacity:0;animation:curon 0.01s 3.3s linear forwards,blink 1.1s 3.3s steps(1) infinite}
+    @keyframes curon{from{opacity:1}to{opacity:1}}
+    @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+    .pt{animation:fl linear infinite}
+    @keyframes fl{0%{transform:translateY(0);opacity:0}12%{opacity:0.6}85%{opacity:0.35}100%{transform:translateY(-330px);opacity:0}}
+    .shine{animation:sweep 7s ease-in-out 3s infinite}
+    @keyframes sweep{0%{transform:translateX(0)}45%,100%{transform:translateX(1200px)}}
+    .glowcopy{opacity:0;animation:up 0.7s 1.3s cubic-bezier(0.2,0.7,0.3,1) forwards,breathe 5s 2.6s ease-in-out infinite}
+    @keyframes breathe{0%,100%{opacity:0.9}50%{opacity:0.4}}
+    .star{animation:shoot 9s linear infinite}
+    @keyframes shoot{0%{transform:translate(0,0);opacity:0}3%{opacity:0.9}10%{transform:translate(240px,100px);opacity:0}100%{transform:translate(240px,100px);opacity:0}}
+  </style>
+
+  <!-- backdrop -->
+  <rect width="900" height="380" fill="#070b14"/>
+  <rect width="900" height="380" fill="url(#grid)"/>
+  <circle cx="170" cy="80" r="260" fill="url(#glowCyan)"/>
+  <circle cx="750" cy="310" r="280" fill="url(#glowViolet)"/>
+
+  <!-- floating particles -->
+  <g>
+    <circle class="pt" style="animation-duration:9s;animation-delay:0s"    cx="60"  cy="372" r="2"   fill="#22d3ee" opacity="0.5"/>
+    <circle class="pt" style="animation-duration:12s;animation-delay:2s"   cx="230" cy="376" r="1.6" fill="#a78bfa" opacity="0.5"/>
+    <circle class="pt" style="animation-duration:8s;animation-delay:4s"    cx="420" cy="374" r="2.2" fill="#22d3ee" opacity="0.5"/>
+    <circle class="pt" style="animation-duration:13s;animation-delay:1s"   cx="560" cy="378" r="1.5" fill="#f472b6" opacity="0.5"/>
+    <circle class="pt" style="animation-duration:10s;animation-delay:5s"   cx="700" cy="372" r="2"   fill="#a78bfa" opacity="0.5"/>
+    <circle class="pt" style="animation-duration:11s;animation-delay:3s"   cx="830" cy="376" r="1.8" fill="#22d3ee" opacity="0.5"/>
+    <circle class="pt" style="animation-duration:14s;animation-delay:6s"   cx="130" cy="378" r="1.4" fill="#4ade80" opacity="0.5"/>
+    <circle class="pt" style="animation-duration:9.5s;animation-delay:7s"  cx="640" cy="374" r="1.6" fill="#22d3ee" opacity="0.5"/>
+  </g>
+
+  <!-- shooting stars -->
+  <circle class="star" style="animation-delay:1.5s" cx="620" cy="24" r="1.6" fill="#e0f6ff" opacity="0.9"/>
+  <circle class="star" style="animation-delay:6s" cx="200" cy="16" r="1.3" fill="#cdeffd" opacity="0.8"/>
+
+  <!-- terminal window -->
+  <g filter="url(#winShadow)">
+    <rect x="90" y="44" width="720" height="308" rx="14" fill="#0b1120" stroke="#1e2b46" stroke-width="1"/>
+    <path d="M90 58a14 14 0 0 1 14-14h692a14 14 0 0 1 14 14v24H90z" fill="#101a2e"/>
+    <circle cx="118" cy="63" r="6.5" fill="#ff5f57"/>
+    <circle cx="140" cy="63" r="6.5" fill="#febc2e"/>
+    <circle cx="162" cy="63" r="6.5" fill="#28c840"/>
+    <text x="450" y="68" text-anchor="middle" font-size="13" fill="#64748b">kemalcalak — zsh</text>
+  </g>
+
+  <!-- line 1: whoami -->
+  <text class="type t1" x="122" y="120" font-size="15" fill="#e2e8f0">
+    <tspan fill="#4ade80">kemalcalak</tspan><tspan fill="#64748b">:~$&#160;</tspan><tspan>w</tspan><tspan>h</tspan><tspan>o</tspan><tspan>a</tspan><tspan>m</tspan><tspan>i</tspan>
+  </text>
+
+  <!-- name + title -->
+  <text class="glowcopy" x="122" y="172" font-size="34" font-weight="700" letter-spacing="2" fill="url(#nameGrad)" filter="url(#bigBlur)">ALI KEMAL ÇALAK</text>
+  <text class="rise d13" x="122" y="172" font-size="34" font-weight="700" letter-spacing="2" fill="url(#nameGrad)" filter="url(#neon)">ALI KEMAL ÇALAK</text>
+  <text class="rise d17" x="122" y="202" font-size="15" fill="#94a3b8">Jr. Software Engineer</text>
+
+  <!-- line 2: current focus -->
+  <text class="type t2" x="122" y="246" font-size="15" fill="#e2e8f0">
+    <tspan fill="#4ade80">kemalcalak</tspan><tspan fill="#64748b">:~$&#160;</tspan><tspan>.</tspan><tspan>/</tspan><tspan>c</tspan><tspan>u</tspan><tspan>r</tspan><tspan>r</tspan><tspan>e</tspan><tspan>n</tspan><tspan>t</tspan><tspan>-</tspan><tspan>f</tspan><tspan>o</tspan><tspan>c</tspan><tspan>u</tspan><tspan>s</tspan><tspan>.</tspan><tspan>s</tspan><tspan>h</tspan>
+  </text>
+
+  <!-- cycling output -->
+  <g font-size="15">
+    <text class="r1" x="122" y="284" fill="#7dd3fc">&gt; building full-stack apps with FastAPI &amp; Next.js</text>
+    <text class="r2" x="122" y="284" fill="#c4b5fd">&gt; crafting AI agents with Agno</text>
+    <text class="r3" x="122" y="284" fill="#86efac">&gt; B.Sc. Software Engineering @ KTU (2022 - 2026)</text>
+  </g>
+
+  <!-- idle prompt + blinking cursor -->
+  <text class="rise d33" x="122" y="326" font-size="15">
+    <tspan fill="#4ade80">kemalcalak</tspan><tspan fill="#64748b">:~$</tspan>
+  </text>
+  <rect class="cursor" x="246" y="313" width="9" height="16" fill="#22d3ee"/>
+
+  <!-- glass shine sweep -->
+  <g clip-path="url(#termClip)">
+    <g transform="skewX(-18)">
+      <rect class="shine" x="-180" y="0" width="130" height="380" fill="url(#shineGrad)"/>
+    </g>
+  </g>
+</svg>

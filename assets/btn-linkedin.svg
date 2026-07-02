@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 122 36" width="122" height="36" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, 'Liberation Mono', monospace">
+  <style>
+    .b{animation:pulse 3.2s ease-in-out 0.4s infinite}
+    @keyframes pulse{0%,100%{stroke-opacity:0.5}50%{stroke-opacity:1}}
+  </style>
+  <rect class="b" x="1" y="1" width="120" height="34" rx="9" fill="#60a5fa" fill-opacity="0.07" stroke="#60a5fa" stroke-width="1"/>
+  <rect x="14" y="11" width="14" height="14" rx="3.5" fill="none" stroke="#60a5fa" stroke-width="1.3"/>
+  <text x="17" y="22" font-size="9.5" font-weight="700" fill="#60a5fa">in</text>
+  <text x="36" y="22.5" font-size="12.5" font-weight="700" letter-spacing="1.5" fill="#60a5fa">LINKEDIN</text>
+</svg>
