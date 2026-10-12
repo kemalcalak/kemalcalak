@@ -31,13 +31,13 @@
 
 <p align="center">
   <img
-    height="165"
+    height="195"
     src="https://github-readme-stats-ruddy-gamma-27.vercel.app/api?username=kemalcalak&show_icons=true&include_all_commits=true&locale=en&bg_color=0b1120&title_color=22d3ee&text_color=94a3b8&icon_color=a78bfa&hide_border=true"
     alt="github stats"
   />
   <img
-    height="165"
-    src="https://github-readme-stats-ruddy-gamma-27.vercel.app/api/top-langs?username=kemalcalak&hide=jupyter%20notebook&locale=en&layout=compact&bg_color=0b1120&title_color=22d3ee&text_color=94a3b8&icon_color=a78bfa&hide_border=true"
+    height="195"
+    src="https://github-readme-stats-ruddy-gamma-27.vercel.app/api/top-langs?username=kemalcalak&langs_count=10&locale=en&layout=compact&bg_color=0b1120&title_color=22d3ee&text_color=94a3b8&icon_color=a78bfa&hide_border=true"
     alt="top languages"
   />
 </p>
