@@ -1,37 +1,42 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-darkroom.svg" />
-  <img width="100%" src="assets/hero-paper.svg" alt="Ali Kemal Çalak, Agentic AI Engineer: agents, LLM systems and fullstack" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-night.svg" />
+  <img width="100%" src="assets/hero-day.svg" alt="Ali Kemal Çalak, Full-stack Agentic AI Engineer. I build agent systems and the web apps that use them." />
 </picture>
 
 <p>
-  <a href="https://kemalcalak.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-website-darkroom.svg" /><img src="assets/link-website-paper.svg" alt="Website" height="34" /></picture></a>
-  <a href="https://www.linkedin.com/in/alikemalcalak/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-linkedin-darkroom.svg" /><img src="assets/link-linkedin-paper.svg" alt="LinkedIn" height="34" /></picture></a>
-  <a href="https://medium.com/@kemalcalak"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-medium-darkroom.svg" /><img src="assets/link-medium-paper.svg" alt="Medium" height="34" /></picture></a>
-  <a href="mailto:kemalcalak@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-email-darkroom.svg" /><img src="assets/link-email-paper.svg" alt="Email" height="34" /></picture></a>
+  <a href="https://kemalcalak.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-website-night.svg" /><img src="assets/link-website-day.svg" alt="Website" height="36" /></picture></a>
+  <a href="https://www.linkedin.com/in/alikemalcalak/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-linkedin-night.svg" /><img src="assets/link-linkedin-day.svg" alt="LinkedIn" height="36" /></picture></a>
+  <a href="https://medium.com/@kemalcalak"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-medium-night.svg" /><img src="assets/link-medium-day.svg" alt="Medium" height="36" /></picture></a>
+  <a href="https://x.com/kemalcalak"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-x-night.svg" /><img src="assets/link-x-day.svg" alt="X" height="36" /></picture></a>
+  <a href="mailto:kemalcalak@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-email-night.svg" /><img src="assets/link-email-day.svg" alt="Email" height="36" /></picture></a>
 </p>
 
-Junior AI engineer building intelligent agents: multi-agent orchestration, MCP integration and workflow automation. The fullstack toolkit that turns them into products: FastAPI, Next.js, PostgreSQL. Latest writing: [backend security, on Medium](https://medium.com/p/688f6d61a4c6).
+I work at SeriAI as a Full-stack AI Engineer. I build every layer of a product, from the interface down to the database, and the agent systems that run on top of it: several agents working together, MCP integrations and workflow automation. I graduated in software engineering from KTÜ in 2026. Latest writing: [backend security, on Medium](https://medium.com/p/688f6d61a4c6).
+
+### Projects
 
 <p>
-  <a href="https://github.com/kemalcalak/design-editor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/film-design-editor-darkroom.svg" /><img src="assets/film-design-editor-paper.svg" alt="Design Editor: AI agents design on a live canvas over MCP, local-first, in Rust" width="49%" /></picture></a>
-  <a href="https://github.com/kemalcalak/warroom"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/film-warroom-darkroom.svg" /><img src="assets/film-warroom-paper.svg" alt="Warroom: one URL in, an evidence-linked report and your rival's next move out" width="49%" /></picture></a>
-  <a href="https://github.com/kemalcalak/NextJS-Template"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/film-nextjs-template-darkroom.svg" /><img src="assets/film-nextjs-template-paper.svg" alt="Next.js Starter: the boring 20% of every SaaS frontend, solved once and properly" width="49%" /></picture></a>
-  <a href="https://github.com/kemalcalak/Fastapi-Template"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/film-fastapi-template-darkroom.svg" /><img src="assets/film-fastapi-template-paper.svg" alt="FastAPI Starter: layered async backend with auth, RBAC, jobs and tracing built in" width="49%" /></picture></a>
+  <a href="https://ivralo.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-ivralo-night.svg" /><img src="assets/project-ivralo-day.svg" alt="ivralo: reads the alert and the logs when production breaks and shows the cause with proof. Runs on the company's own servers." width="49%" /></picture></a>
+  <a href="https://github.com/kemalcalak/design-editor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-design-editor-night.svg" /><img src="assets/project-design-editor-day.svg" alt="Design Editor: a vector editor on your own machine, where you design together with AI agents over MCP." width="49%" /></picture></a>
+  <a href="https://kemalcalak.com/projects/sponsorhub"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-sponsorhub-night.svg" /><img src="assets/project-sponsorhub-day.svg" alt="SponsorHub: a platform that brings competition teams, student clubs and sponsors together." width="49%" /></picture></a>
+  <a href="https://github.com/kemalcalak/NextJS-Template"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-saas-starter-night.svg" /><img src="assets/project-saas-starter-day.svg" alt="SaaS Starter: the auth, i18n and testing setup every SaaS ends up rewriting, done once and done properly." width="49%" /></picture></a>
 </p>
 
+All of them, with films and write-ups: [kemalcalak.com/projects](https://kemalcalak.com/projects)
+
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/credits-darkroom.svg" />
-  <img width="100%" src="assets/credits-paper.svg" alt="Credits. Languages: Python, TypeScript, JavaScript. Agentic AI: Agno, MCP, multi-agent systems. Backend: FastAPI, Node.js. Frontend and mobile: React, Next.js, React Native. Data: PostgreSQL, MongoDB, Redis." />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/tools-night.svg" />
+  <img width="100%" src="assets/tools-day.svg" alt="Tools I use. AI and agents: multi-agent systems, MCP, RAG, Agno, n8n, Claude Code. Languages: Python, TypeScript, JavaScript. Frontend: React, Next.js. Backend and data: FastAPI, PostgreSQL, MongoDB, Redis." />
 </picture>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-ruddy-gamma-27.vercel.app/api?username=kemalcalak&show_icons=true&include_all_commits=true&locale=en&bg_color=0b0a09&title_color=eae3d6&text_color=b4aca4&icon_color=ff4a1c&ring_color=ff4a1c&hide_border=true&disable_animations=true" />
-    <img height="195" src="https://github-readme-stats-ruddy-gamma-27.vercel.app/api?username=kemalcalak&show_icons=true&include_all_commits=true&locale=en&bg_color=f0eae0&title_color=241c12&text_color=3a332a&icon_color=c93a10&ring_color=c93a10&hide_border=true&disable_animations=true" alt="GitHub stats" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-ruddy-gamma-27.vercel.app/api?username=kemalcalak&show_icons=true&include_all_commits=true&locale=en&bg_color=0E1116&title_color=E9ECF1&text_color=AAB1BC&icon_color=86B0FF&ring_color=86B0FF&hide_border=true&disable_animations=true" />
+    <img height="195" src="https://github-readme-stats-ruddy-gamma-27.vercel.app/api?username=kemalcalak&show_icons=true&include_all_commits=true&locale=en&bg_color=F6F7F9&title_color=11151B&text_color=434A55&icon_color=2049C9&ring_color=2049C9&hide_border=true&disable_animations=true" alt="GitHub stats" />
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-ruddy-gamma-27.vercel.app/api/top-langs?username=kemalcalak&langs_count=10&locale=en&layout=compact&bg_color=0b0a09&title_color=eae3d6&text_color=b4aca4&hide_border=true&disable_animations=true" />
-    <img height="195" src="https://github-readme-stats-ruddy-gamma-27.vercel.app/api/top-langs?username=kemalcalak&langs_count=10&locale=en&layout=compact&bg_color=f0eae0&title_color=241c12&text_color=3a332a&hide_border=true&disable_animations=true" alt="Top languages" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-ruddy-gamma-27.vercel.app/api/top-langs?username=kemalcalak&langs_count=10&locale=en&layout=compact&bg_color=0E1116&title_color=E9ECF1&text_color=AAB1BC&hide_border=true&disable_animations=true" />
+    <img height="195" src="https://github-readme-stats-ruddy-gamma-27.vercel.app/api/top-langs?username=kemalcalak&langs_count=10&locale=en&layout=compact&bg_color=F6F7F9&title_color=11151B&text_color=434A55&hide_border=true&disable_animations=true" alt="Top languages" />
   </picture>
 </p>
 
@@ -40,7 +45,4 @@ Junior AI engineer building intelligent agents: multi-agent orchestration, MCP i
   <img width="100%" src="https://raw.githubusercontent.com/kemalcalak/kemalcalak/output/github-contribution-grid-snake.svg" alt="Contribution graph being eaten by a snake" />
 </picture>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/closing-darkroom.svg" />
-  <img width="100%" src="assets/closing-paper.svg" alt="Let's build systems that act. Shot on code, no cameras were used." />
-</picture>
+Write to me about a project or a job: [kemalcalak@gmail.com](mailto:kemalcalak@gmail.com). I usually reply within two days.
