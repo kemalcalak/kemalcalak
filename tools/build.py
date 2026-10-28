@@ -292,7 +292,7 @@ def main():
     for old in OUT.glob("*.svg"):
         old.unlink()
     for stock in STOCKS:
-        cards = {"hero": hero(stock), "tools": tools(stock), "about": about(stock), "contact": contact(stock)}
+        cards = {"intro": hero(stock), "tools": tools(stock), "about": about(stock), "contact": contact(stock)}
         for name in LABELS:
             cards[f"label-{name.lower()}"] = section(stock, name)
         for slug, args in PROJECTS.items():
