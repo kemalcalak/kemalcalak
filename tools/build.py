@@ -167,11 +167,58 @@ def hero(stock):
 
 def link(stock, label):
     s = STOCKS[stock]
-    W, H = 132, 36
+    W, H = max(132, round(text_width("Plex Mono", label, 13) + 56)), 36
     c = Card(W, H, label)
     c.add(box(s, W, H, s["raised"], 6))
     c.text("Plex Mono", label, 14, 23, 13, s["ink"])
     c.text("Plex Mono", "↗", W - 14, 23, 13, s["accent"], anchor="end")
+    return c
+
+
+ABOUT = ("I work at SeriAI as a Full-stack AI Engineer. I build every layer of a product, from the interface "
+         "down to the database, and the agent systems that run on top of it: several agents working together, "
+         "MCP integrations and workflow automation. I graduated in software engineering from KTÜ in 2026.")
+
+
+def about(stock):
+    s = STOCKS[stock]
+    W = 900
+    lines = wrap("Plex Sans", ABOUT, 17, W - 64)
+    H = 70 + len(lines) * 28 + 14
+    c = Card(W, H, ABOUT)
+    c.add(box(s, W, H, s["page"], 10))
+    c.text("Plex Mono Medium", "About", 32, 44, 13, s["muted"])
+    for i, ln in enumerate(lines):
+        c.text("Plex Sans", ln, 32, 80 + i * 28, 17, s["soft"])
+    return c
+
+
+def section(stock, name):
+    """A section label as the site draws it: mono, muted, then a hairline."""
+    s = STOCKS[stock]
+    W, H = 900, 44
+    c = Card(W, H, name)
+    c.text("Plex Mono Medium", name, 2, 27, 13, s["muted"])
+    x = text_width("Plex Mono Medium", name, 13) + 16
+    c.add(f'<line x1="{x:.0f}" y1="22.5" x2="{W}" y2="22.5" stroke="{s["line"]}"/>')
+    return c
+
+
+CONTACT = ("Write to me about a project or a job.", "I usually reply within two days.", "kemalcalak@gmail.com")
+
+
+def contact(stock):
+    s = STOCKS[stock]
+    W, H = 900, 150
+    lead, note, email = CONTACT
+    c = Card(W, H, f"{lead} {note} {email}")
+    c.add(box(s, W, H, s["page"], 10))
+    c.text("Plex Mono Medium", "Contact", 32, 44, 13, s["muted"])
+    c.text("Plex Sans Semi", lead, 31, 84, 24, s["ink"])
+    c.text("Plex Sans", note, 32, 116, 16, s["muted"])
+    bw = text_width("Plex Mono", email, 14) + 60
+    c.add(f'<rect x="{W - 32 - bw:.1f}" y="62" width="{bw:.1f}" height="40" rx="6" fill="{s["accent"]}"/>')
+    c.text("Plex Mono", f"{email}  ↗", W - 32 - bw / 2, 87, 14, s["page"], anchor="middle")
     return c
 
 
@@ -230,7 +277,8 @@ PROJECTS = {
                      ["Next.js", "FastAPI", "PostgreSQL", "Redis"]),
 }
 
-LINKS = ["Website", "LinkedIn", "Medium", "X", "Email"]
+LINKS = ["Website", "LinkedIn", "Medium", "X", "Email", "All projects", "Latest writing"]
+LABELS = ["Projects"]
 
 
 def main():
@@ -238,11 +286,13 @@ def main():
     for old in OUT.glob("*.svg"):
         old.unlink()
     for stock in STOCKS:
-        cards = {"hero": hero(stock), "tools": tools(stock)}
+        cards = {"hero": hero(stock), "tools": tools(stock), "about": about(stock), "contact": contact(stock)}
+        for name in LABELS:
+            cards[f"label-{name.lower()}"] = section(stock, name)
         for slug, args in PROJECTS.items():
             cards[f"project-{slug}"] = project(stock, *args)
         for label in LINKS:
-            cards[f"link-{label.lower()}"] = link(stock, label)
+            cards[f"link-{label.lower().replace(' ', '-')}"] = link(stock, label)
         for name, card in cards.items():
             (OUT / f"{name}-{stock}.svg").write_text(card.render(), encoding="utf-8")
     total = sum(p.stat().st_size for p in OUT.glob("*.svg"))

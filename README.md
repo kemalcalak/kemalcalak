@@ -11,9 +11,15 @@
   <a href="mailto:kemalcalak@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-email-night.svg" /><img src="assets/link-email-day.svg" alt="Email" height="36" /></picture></a>
 </p>
 
-I work at SeriAI as a Full-stack AI Engineer. I build every layer of a product, from the interface down to the database, and the agent systems that run on top of it: several agents working together, MCP integrations and workflow automation. I graduated in software engineering from KTÜ in 2026. Latest writing: [backend security, on Medium](https://medium.com/p/688f6d61a4c6).
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/about-night.svg" />
+  <img width="100%" src="assets/about-day.svg" alt="I work at SeriAI as a Full-stack AI Engineer. I build every layer of a product, from the interface down to the database, and the agent systems that run on top of it: several agents working together, MCP integrations and workflow automation. I graduated in software engineering from KTÜ in 2026." />
+</picture>
 
-### Projects
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/label-projects-night.svg" />
+  <img width="100%" src="assets/label-projects-day.svg" alt="Projects" />
+</picture>
 
 <p>
   <a href="https://ivralo.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-ivralo-night.svg" /><img src="assets/project-ivralo-day.svg" alt="ivralo: reads the alert and the logs when production breaks and shows the cause with proof. Runs on the company's own servers." width="49%" /></picture></a>
@@ -22,7 +28,10 @@ I work at SeriAI as a Full-stack AI Engineer. I build every layer of a product, 
   <a href="https://github.com/kemalcalak/NextJS-Template"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-saas-starter-night.svg" /><img src="assets/project-saas-starter-day.svg" alt="SaaS Starter: the auth, i18n and testing setup every SaaS ends up rewriting, done once and done properly." width="49%" /></picture></a>
 </p>
 
-All of them, with films and write-ups: [kemalcalak.com/projects](https://kemalcalak.com/projects)
+<p>
+  <a href="https://kemalcalak.com/projects"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-all-projects-night.svg" /><img src="assets/link-all-projects-day.svg" alt="All projects" height="36" /></picture></a>
+  <a href="https://medium.com/p/688f6d61a4c6"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-latest-writing-night.svg" /><img src="assets/link-latest-writing-day.svg" alt="Latest writing: backend security, on Medium" height="36" /></picture></a>
+</p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/tools-night.svg" />
@@ -45,4 +54,4 @@ All of them, with films and write-ups: [kemalcalak.com/projects](https://kemalca
   <img width="100%" src="https://raw.githubusercontent.com/kemalcalak/kemalcalak/output/github-contribution-grid-snake.svg" alt="Contribution graph being eaten by a snake" />
 </picture>
 
-Write to me about a project or a job: [kemalcalak@gmail.com](mailto:kemalcalak@gmail.com). I usually reply within two days.
+<a href="mailto:kemalcalak@gmail.com"><picture>  <source media="(prefers-color-scheme: dark)" srcset="assets/contact-night.svg" />  <img width="100%" src="assets/contact-day.svg" alt="Write to me about a project or a job. I usually reply within two days. kemalcalak@gmail.com" /></picture></a>
