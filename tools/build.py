@@ -138,12 +138,18 @@ def chips(c, s, items, x, y, size=12):
     return x
 
 
-def mark(c, s, x, y, scale=1.0):
-    """The akç monogram: Plex Mono 500 in a 1.5px outlined rounded rectangle."""
-    w, h = 64 * scale, 40 * scale
-    c.add(f'<rect x="{x:g}" y="{y:g}" width="{w:g}" height="{h:g}" rx="{8 * scale:g}" '
-          f'fill="none" stroke="{s["ink"]}" stroke-width="1.5"/>')
-    c.spans("Plex Mono Medium", [("ak", s["ink"]), ("ç", s["accent"])], x + 13 * scale, y + 26.5 * scale, 20 * scale)
+# The site's AKÇ mark, copied from components/site/Mark.tsx: IBM Plex Sans 700 outlined
+# on a 32 unit grid, so it is drawn exactly as on kemalcalak.com.
+MARK_PATH = "M13.21 19.05H11.69L11.21 17.46H8.97L8.49 19.05H7.01L9.22 12.35H11.03ZM10.85 16.22 10.44 14.83 10.11 13.68H10.06L9.73 14.83L9.32 16.22Z M17.67 19.05 15.89 16.13 15.02 17.19V19.05H13.56V12.35H15.02V15.54H15.08L16.03 14.24L17.54 12.35H19.19L16.93 15.11L19.39 19.05Z M22.37 13.53Q21.73 13.53 21.34 13.95Q20.95 14.37 20.95 15.16V16.24Q20.95 17.03 21.34 17.45Q21.73 17.87 22.37 17.87Q22.91 17.87 23.23 17.58Q23.56 17.29 23.71 16.87L24.9 17.56Q24.52 18.32 23.92 18.74Q23.31 19.17 22.42 19.17L22.34 19.58L22.37 19.62Q22.49 19.59 22.6 19.57Q22.72 19.55 22.84 19.55Q23.12 19.55 23.33 19.7Q23.54 19.86 23.54 20.21Q23.54 20.54 23.35 20.73Q23.17 20.92 22.88 21.01Q22.6 21.09 22.27 21.09Q21.77 21.09 21.49 20.95Q21.2 20.81 21.08 20.66L21.52 20.13Q21.62 20.24 21.77 20.32Q21.93 20.41 22.15 20.41Q22.34 20.41 22.46 20.35Q22.58 20.29 22.58 20.17Q22.58 20.06 22.44 19.94Q22.31 19.82 21.86 19.78L21.65 19.76L21.79 19.12Q21.06 19 20.52 18.59Q19.98 18.18 19.7 17.47Q19.41 16.76 19.41 15.75Q19.41 14.62 19.77 13.83Q20.14 13.05 20.8 12.64Q21.47 12.24 22.37 12.24Q23.3 12.24 23.91 12.62Q24.52 13 24.88 13.81L23.62 14.46Q23.5 14.04 23.2 13.79Q22.91 13.53 22.37 13.53Z"
+
+
+def mark(c, s, x, y, size=48):
+    """The AKÇ mark: frame and letters in ink, the line under them in the accent."""
+    k = size / 32
+    c.add(f'<g transform="translate({x:g} {y:g}) scale({k:g})">'
+          f'<rect x="0.5" y="0.5" width="31" height="31" rx="6.54" fill="none" stroke="{s["ink"]}" stroke-width="1"/>'
+          f'<path fill="{s["ink"]}" d="{MARK_PATH}"/>'
+          f'<rect x="6.82" y="20.35" width="13.25" height="1" rx="0.5" fill="{s["accent"]}"/></g>')
 
 
 INTRO = "I build agent systems and the web apps that use them."
@@ -155,7 +161,7 @@ def hero(stock):
     W, H = 900, 260
     c = Card(W, H, f"Ali Kemal Çalak, Full-stack Agentic AI Engineer. {INTRO}")
     c.add(box(s, W, H, s["page"], 10))
-    mark(c, s, 48, 44)
+    mark(c, s, 48, 40, 56)
     c.text("Plex Sans Semi", "Ali Kemal Çalak", 46, 152, 48, s["ink"])
     c.text("Plex Sans", "Full-stack Agentic AI Engineer", 48, 188, 20, s["soft"])
     c.text("Plex Sans", INTRO, 48, 220, 16, s["muted"])
